@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     background-color: #e2d9c3;
     color: #4b4a4a;
@@ -16,8 +15,36 @@ header{
     justify-content: space-between;
     border-bottom: solid 1px #182b2b;
 }
+p{
+    margin: 0;
+}
+footer{
+    background-color: #2F4F4F;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+}
+.mi-fondo{
+    background-color: #182b2b;
+    padding: 0;
+    margin: 0;
+}
+.piefinal{
+    width: 100%;
+    font-style: italic;
+    background-color: black;
+    margin: 0;
+}
 
-/* CLASES Y PROFESORES */
+.ancho-carrusel{
+    width: 300px;
+}
+.ancho-clases{
+    max-width: 600px;
+}
+
+
+
+
 .materias{
     text-align: center;
     padding: 10px;
@@ -56,13 +83,6 @@ header{
     padding: 5px;
     width: 120px;
 }
-p{
-    margin: 0;
-}
-
-
-/* CONTACTANOS */
-
 .contacto{
     display: flex;
     flex-wrap: wrap;
@@ -91,30 +111,19 @@ form{
     object-fit: cover;
     display: block;
 }
-
-
-/* FOOTER - PIE  DE PAGINA */
-
-footer{
-    background-color: #2F4F4F;
-    color: white;
-    font-family: "Noto Sans", sans-serif;
-}
-.mi-fondo{
-    background-color: #182b2b;
-    padding: 0;
-    margin: 0;
-}
-.piefinal{
-    width: 100%;
-    font-style: italic;
-    background-color: black;
-    margin: 0;
-}
 .card-img-top {
     height: 350px;
     object-fit: cover;
 }
 .fondo-card{
     background-color: #aca28d;
+}
+.mini-logo{
+    width: 100px;
+}
+.mi-ancho{
+    width: 500px;
+}
+.img-logo{
+    width: 100%;
 }
