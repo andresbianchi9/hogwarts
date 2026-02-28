@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #e2d9c3;
+    color: #4b4a4a;
+    font-family: "Noto Sans", sans-serif;
+}
+header{
+    font-style: italic;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #182b2b;
+}
+
+/* CLASES Y PROFESORES */
+.materias{
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    color:#182b2b;
+    font-weight: bold;
+}
+.materiasflex{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px;
+    padding: 20px;
+}
+.materiasflex article{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 15px;
+}
+.conocer{
+    background-color: white;
+    font-weight: bold;
+    color: #2F4F4F;
+    padding: 5px;
+    width: 120px;
+}
+.inscribirse{
+    background-color: #2F4F4F;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    width: 120px;
+}
+p{
+    margin: 0;
+}
+
+
+/* CONTACTANOS */
+
+.contacto{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    background-color: #2F4F4F;
+    color: white;
+    justify-content: space-around;
+}
+form{
+    background-color: #182b2b;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.mascontactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+}
+.foto{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* FOOTER - PIE  DE PAGINA */
+
+footer{
+    background-color: #2F4F4F;
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+}
+.mi-fondo{
+    background-color: #182b2b;
+    padding: 0;
+    margin: 0;
+}
+.piefinal{
+    width: 100%;
+    font-style: italic;
+    background-color: black;
+    margin: 0;
+}
+.card-img-top {
+    height: 350px;
+    object-fit: cover;
+}
+.fondo-card{
+    background-color: #aca28d;
+}
