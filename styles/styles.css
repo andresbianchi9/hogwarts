@@ -34,40 +34,51 @@ footer{
     background-color: black;
     margin: 0;
 }
-
 .ancho-carrusel{
     width: 300px;
 }
 .ancho-clases{
     max-width: 600px;
+    margin: 0 auto;
 }
-
-
-
-
-.materias{
-    text-align: center;
-    padding: 10px;
-    font-size: 30px;
-    color:#182b2b;
-    font-weight: bold;
-}
-.materiasflex{
+.materias-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 50px;
     padding: 20px;
+    justify-content: center;
+    align-items: stretch;
 }
-.materiasflex article{
+article{
     display: flex;
     flex-direction: column;
-    gap: 10px;
     align-items: center;
+    gap: 10px;
+    height: 100%;
     margin-bottom: 10px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 5px;
+}
+article h3{
+    height: 70px;
+    text-align: center;
+    margin: 0;
+    align-items: center;
+    display: flex;
+}
+article div p{
     padding: 15px;
+}
+article div{
+    flex-grow: 1;
+}
+.casasflex{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 5px;
+    padding: 5px;
 }
 .conocer{
     background-color: white;
@@ -84,19 +95,11 @@ footer{
     width: 120px;
 }
 .contacto{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 30px;
     background-color: #2F4F4F;
     color: white;
-    justify-content: space-around;
 }
 form{
     background-color: #182b2b;
-    text-align: center;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
 }
 .mascontactos{
     display: flex;
