@@ -9,53 +9,52 @@
     <link rel="stylesheet" href="../styles/styles.css">
 </head>
 <body>
-    <header class="d-flex justify-content-start flex-lg-row-reverse justify-content-lg-around">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="./institucional.html">Institucional</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Asignaturas</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="./casas.html">Casas</a>
-                        </li>
-                        <li class="nav-item">
-                        <a class="nav-link" href="./contacto.html">Contacto</a>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div>
-            <h1>Hogwarts</h1>
-            <p>Escuela de Magia y Hechicería</p>
-        </div>
+    <header class="d-flex flex-column ps-4">
+        <h1>Hogwarts</h1>
+        <p>Escuela de Magia y Hechicería</p>
     </header>
-    <main>
-        <h2 class="">Estudiar en Hogwarts</h2>
+    <nav class="navbar navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./institucional.html">Institucional</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Asignaturas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./casas.html">Casas</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="fondo-asignaturas">
+        <h2 class="p-4">Estudiar en Hogwarts</h2>
         <section class="materias-grid">
             <article>
                 <h3>Encantamientos</h3>
                 <p>Profesor: Filius Flitwick</p>
                 <img src="../asset/prof-flitwick.jpg" alt="Profesor Filius Flitwick, de la aignatura Encantamientos">
-                <div>
-                    <p>El profesor Flitwick es conocido por su habilidad para enseñar encantamientos de manera clara y eficiente. Su enfoque en la precisión y el control 
-                        de la varita lo convierte en uno de los profesores más respetados de Hogwarts.</p>
-                    <p>El arte de canalizar la magia a través de palabras y movimientos exactos. Encantamientos enseña a dominar hechizos que modifican objetos, protegen 
-                        espacios y desatan poderosos efectos con un simple movimiento de varita.</p>
+                <p>El profesor Flitwick es conocido por su habilidad para enseñar encantamientos de manera clara y eficiente.
+                    <a data-bs-toggle="collapse" href="#textoFilius" role="button">Ver más</a></p>
+                <div class="collapse" id="textoFilius">
+                    <p>Su enfoque en la precisión y el control de la varita lo convierte en uno de los profesores más respetados de Hogwarts.</p>
+                    <p>El arte de canalizar la magia a través de palabras y movimientos exactos.</p>
+                    <p>Encantamientos enseña a dominar hechizos que modifican objetos, protegen espacios y desatan poderosos efectos con un simple movimiento de varita.</p>
                     <p>Los encantamientos que aprenderemos en esta materia incluyen: Lumos, Expelliarmus, Alohomora, Protego y muchos más.</p>
                 </div>
                 <div>
-                    <button class="conocer">Conocer más</button>
+                    <button data-bs-toggle="collapse" data-bs-target="#textoFilius" type="button" class="conocer">Conocer más</button>
                     <button class="inscribirse">Inscribirse</button>
                 </div>
             </article>
@@ -63,16 +62,17 @@
                 <h3>Defensa Contra las Artes Oscuras</h3>
                 <p>Profesor: Gilderoy Lockhart</p>
                 <img src="../asset/prof-gilderoy.jpg" alt="Profesor: Gilderoy Lockhart, de la asignatura Defensa Contra las Artes Oscuras">
-                <div>
-                    <p>El profesor Gilderoy es conocido por su enfoque práctico y su habilidad para enseñar a los estudiantes a enfrentar situaciones peligrosas con confianza. 
-                    Su experiencia como ex-Auror lo convierte en un recurso invaluable para los estudiantes que desean aprender a defenderse contra las artes oscuras.</p>
-                    <p>Esta materia se centra en enseñar a los estudiantes cómo protegerse contra las fuerzas oscuras y los hechizos maliciosos. Los estudiantes aprenden a 
+                <p>El profesor Gilderoy es conocido por su enfoque práctico y su habilidad para enseñar a los estudiantes a enfrentar situaciones peligrosas con confianza.
+                    <a data-bs-toggle="collapse" href="#textoGilderoy" role="button">Ver más</a></p>
+                <div class="collapse" id="textoGilderoy">
+                    <p>Su experiencia como ex-Auror lo convierte en un recurso invaluable para los estudiantes que desean aprender a defenderse contra las artes oscuras.</p>
+                    <p>Esta materia se centra en enseñar a los estudiantes cómo protegerse contra las fuerzas oscuras y los hechizos maliciosos. Los estudiantes aprenden a
                         identificar y contrarrestar maleficios, jinxes y otras formas de magia oscura.</p>
                     <p>Los temas cubiertos incluyen: Defensa contra los Dementores, Protección contra los Maleficios Imperdonables, Defensa contra los Horrocruxes y técnicas 
                         de defensa personal.</p>
                 </div>
                 <div>
-                    <button class="conocer">Conocer más</button>
+                    <button data-bs-toggle="collapse" data-bs-target="#textoGilderoy" type="button" class="conocer">Conocer más</button>
                     <button class="inscribirse">Inscribirse</button>
                 </div>
             </article>
@@ -80,15 +80,16 @@
                 <h3>Transformaciones</h3>
                 <p>Profesora: Minerva McGonagall</p>
                 <img src="../asset/prof-minerva.jpg" alt="Profesora: Minerva McGonagall, de la asignatura Transformaciones">
-                <div>
-                    <p>La profesora McGonagall es una experta en transformaciones y es conocida por su disciplina y rigor en el aula. Su habilidad para enseñar a los estudiantes 
-                        a controlar la magia de transformación la convierte en una de las profesoras más respetadas de Hogwarts.</p>
-                    <p>En esta materia, los estudiantes aprenden a transformar objetos y criaturas utilizando magia. Las transformaciones pueden variar desde cambios simples en 
+                <p>La profesora McGonagall es una experta en transformaciones y es conocida por su disciplina y rigor en el aula.
+                    <a data-bs-toggle="collapse" href="#textoMinerva" role="button">Ver más</a></p>
+                <div class="collapse" id="textoMinerva">
+                    <p>Su habilidad para enseñar a los estudiantes a controlar la magia de transformación la convierte en una de las profesoras más respetadas de Hogwarts.</p>
+                    <p>En esta materia, los estudiantes aprenden a transformar objetos y criaturas utilizando magia. Las transformaciones pueden variar desde cambios simples en
                         la apariencia hasta transformaciones complejas que alteran la naturaleza de un objeto o ser vivo.</p>
                     <p>Los temas cubiertos incluyen: Transformación de objetos inanimados, Transformación de animales, Transformación humana y técnicas avanzadas de transformación.</p>
                 </div>
                 <div>
-                    <button class="conocer">Conocer más</button>
+                    <button data-bs-toggle="collapse" data-bs-target="#textoMinerva" type="button" class="conocer">Conocer más</button>
                     <button class="inscribirse">Inscribirse</button>
                 </div>
             </article>
@@ -96,17 +97,17 @@
                 <h3>Pociones</h3>
                 <p>Profesor: Severus Snape</p>
                 <img src="../asset/prof-snape.jpg" alt="Profesor: Severus Snape, de la asignatura Pociones">
-                <div>
-                    <p>El profesor Snape es conocido por su conocimiento profundo de las pociones y su habilidad para enseñar a los estudiantes a crear brebajes mágicos con precisión. 
-                        Aunque su estilo de enseñanza puede ser estricto, su experiencia en el campo de las pociones lo convierte en un recurso invaluable para los estudian tes que 
-                        desean dominar esta materia.</p>
-                    <p>Esta materia se centra en la creación de brebajes mágicos con propiedades especiales. Los estudiantes aprenden a combinar ingredientes mágicos para crear 
-                        pociones que pueden curar heridas, mejorar habilidades, inducir efectos mágicos y mucho más.</p>
+                <p>El profesor Snape es conocido por su conocimiento profundo de las pociones y su habilidad para enseñar a los estudiantes a crear brebajes mágicos con precisión.
+                    <a data-bs-toggle="collapse" href="#textoSeverus" role="button">Ver más</a></p>
+                <div class="collapse" id="textoSeverus">
+                    <p>Aunque su estilo de enseñanza puede ser estricto, su experiencia en el campo de las pociones lo convierte en un recurso invaluable para los estudiantes 
+                    que desean dominar esta materia.</p>
+                    <p>Esta materia se centra en la creación de brebajes mágicos con propiedades especiales. Los estudiantes aprenden a 
+                    combinar ingredientes mágicos para crear pociones que pueden curar heridas, mejorar habilidades, inducir efectos mágicos y mucho más.</p>
                     <p>Los temas cubiertos incluyen: Pociones curativas, Pociones de amor, Pociones de invisibilidad, Pociones de fuerza y técnicas avanzadas de elaboración de pociones.</p>
                 </div>
-                
                 <div>
-                    <button class="conocer">Conocer más</button>
+                    <button data-bs-toggle="collapse" data-bs-target="#textoSeverus" type="button" class="conocer">Conocer más</button>
                     <button class="inscribirse">Inscribirse</button>
                 </div>
             </article>
@@ -114,15 +115,16 @@
                 <h3>Herbología</h3>
                 <p>Profesora: Pomona Sprout</p>
                 <img src="../asset/prof-sprout.jpg" alt="Profesora: Pomona Sprout, de la asignatura Herbología">
-                <div>
-                    <p>La profesora Sprout es una experta en herbología y es conocida por su pasión por las plantas mágicas. Su enfoque práctico y su conocimiento profundo de la 
-                        materia hacen que sus clases sean tanto educativas como entretenidas para los estudiantes.</p>
+                <p>La profesora Sprout es una experta en herbología y es conocida por su pasión por las plantas mágicas.
+                    <a data-bs-toggle="collapse" href="#textoPomona" role="button">Ver más</a></p>
+                <div class="collapse" id="textoPomona">
+                    <p>Su enfoque práctico y su conocimiento profundo de la materia hacen que sus clases sean tanto educativas como entretenidas para los estudiantes.</p>
                     <p>En esta materia, los estudiantes aprenden sobre las plantas mágicas y sus propiedades. La herbología es esencial para la creación de pociones y para el 
-                        cuidado de criaturas mágicas que dependen de plantas específicas para su supervivencia.</p>
+                    cuidado de criaturas mágicas que dependen de plantas específicas para su supervivencia.</p>
                     <p>Los temas cubiertos incluyen: Plantas mágicas comunes, Plantas venenosas, Plantas curativas, Técnicas de cultivo y cuidado de plantas mágicas.</p>
                 </div>
                 <div>
-                    <button class="conocer">Conocer más</button>
+                    <button data-bs-toggle="collapse" data-bs-target="#textoPomona" type="button" class="conocer">Conocer más</button>
                     <button class="inscribirse">Inscribirse</button>
                 </div>
             </article>
@@ -130,15 +132,16 @@
                 <h3>Astronomía</h3>
                 <p>Profesora: Sibyll Trelawey</p>
                 <img src="../asset/prof-trelaway.jpg" alt="Profesora: Sibyll Trelawey, de la asignatura Astronomía">
-                <div>
-                    <p>La profesora Sibyll es una experta en astronomía y es conocida por su habilidad para enseñar a los estudiantes a observar el cielo nocturno con precisión. 
-                        Su enfoque en la conexión entre la astronomía y la magia hace que sus clases sean fascinantes para los estudiantes interesados en el cosmos.</p>
+                <p>La profesora Sibyll es una experta en astronomía y es conocida por su habilidad para enseñar a los estudiantes a observar el cielo nocturno con precisión.
+                    <a data-bs-toggle="collapse" href="#textoSibyll" role="button">Ver más</a></p>
+                <div class="collapse" id="textoSibyll">
+                    <p>Su enfoque en la conexión entre la astronomía y la magia hace que sus clases sean fascinantes para los estudiantes interesados en el cosmos.</p>
                     <p>Esta materia se centra en el estudio de los cuerpos celestes y su influencia en la magia. Los estudiantes aprenden a observar las estrellas, los planetas 
-                        y otros fenómenos astronómicos para comprender cómo afectan la magia y el mundo mágico.</p>
+                    y otros fenómenos astronómicos para comprender cómo afectan la magia y el mundo mágico.</p>
                     <p>Los temas cubiertos incluyen: Observación de estrellas, Influencia de los planetas en la magia, Fenómenos astronómicos y técnicas de navegación mágica.</p>
                 </div>
                 <div>
-                    <button class="conocer">Conocer más</button>
+                    <button data-bs-toggle="collapse" data-bs-target="#textoSibyll" type="button" class="conocer">Conocer más</button>
                     <button class="inscribirse">Inscribirse</button>
                 </div>
             </article>
