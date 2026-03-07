@@ -1,40 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-color: #e2d9c3;
-    color: #4b4a4a;
-    font-family: "Noto Sans", sans-serif;
-}
-header{
-    font-style: italic;
-    display: flex;
-    justify-content: space-between;
-    background-color: #0c151d;
-    color: #aca28d;
-}
-.navbar{
-    background-color: #0c151d;
-    --bs-navbar-active-color: hotpink;
-    --bs-navbar-hover-color: yellow;
-    --bs-navbar-color: #aca28d;
-}
-p{
-    margin: 0;
-}
-footer{
-    background-color: #0c151d;
-    font-family: "Noto Sans", sans-serif;
-}
-.piefinal{
-    width: 100%;
-    font-style: italic;
-    background-color: black;
-    margin: 0;
-}
 .ancho-carrusel{
     width: 300px;
 }
@@ -42,6 +5,45 @@ footer{
     max-width: 600px;
     margin: 0;
 }
+.fondo-section-a{
+    min-height: 50vh;
+    background: linear-gradient(to bottom, #0d131a 0%, #0d131a 20%, #182b2bcc 100%), url(../asset/horizons_village.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 50%;
+    background-position: center, bottom center;
+}
+.fondo-section-b{
+    background: linear-gradient(to bottom, #172425 0%, #182b2b 40%, #cad2e7 100%);
+}
+.fondo-section-c{
+    background-image: url(../asset/background-l.jpg);
+}
+.div-index{
+    background-color: #0c151d;
+    color: #aca28d;
+    padding: 20px;
+}
+@media (max-width: 768px) {
+    .fondo-section-a {
+        background-size: cover, auto 15%;
+    }
+}
+.fondo-asignaturas{
+    background-image: url(../asset/logo-fondo.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+@media (max-width: 768px) {
+    .fondo-asignaturas {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+}
+
+
+
+
 .materias-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -96,6 +98,10 @@ article p{
     padding: 5px;
     width: 120px;
 }
+
+
+
+
 .contacto{
     background-color: #2F4F4F;
     color: white;
@@ -109,12 +115,6 @@ form{
     justify-content: space-around;
     padding: 50px;
     text-align: center;
-}
-.foto{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    display: block;
 }
 .card-img-top {
     height: 350px;
@@ -132,41 +132,7 @@ form{
 .img-logo{
     width: 100%;
 }
-.fondo-section-a{
-    min-height: 50vh;
-    background: linear-gradient(to bottom, #0d131a 0%, #0d131a 20%, #182b2bcc 100%), url(../asset/horizons_village.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, auto 50%;
-    background-position: center, bottom center;
-}
-.fondo-section-b{
-    background: linear-gradient(to bottom, #172425 0%, #182b2b 40%, #cad2e7 100%);
-}
-.fondo-section-c{
-    background-image: url(../asset/background-l.jpg);
-}
-.div-index{
-    background-color: #0c151d;
-    color: #aca28d;
-    padding: 20px;
-}
-@media (max-width: 768px) {
-    .fondo-section-a {
-        background-size: cover, auto 15%;
-    }
-}
-.fondo-asignaturas{
-    background-image: url(../asset/logo-fondo.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-}
-@media (max-width: 768px) {
-    .fondo-asignaturas {
-        background-size: contain;
-        background-repeat: repeat;
-    }
-}
+
 .div-casas{
     max-width: 600px;
     margin: 0 auto;
