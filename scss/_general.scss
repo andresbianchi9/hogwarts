@@ -25,6 +25,24 @@ h2, h3, h4, h5, h6{
     margin: 0;
     border: 0;
 }
+.banner-imagenes{
+    width: 25%;
+    height: 300px;
+    object-fit: cover;
+    display: inline;
+}
+.seccion-banner{
+    width: 100%;
+    font-size: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
 footer{
     background-color: $color-intenso;
     color: $color-claro;
@@ -37,4 +55,7 @@ footer .img-fluid{
 footer p{
     font-style: italic;
     background-color: black;
+}
+.img-fluid{
+    max-width: 100%;
 }

@@ -1,33 +1,3 @@
-.ancho-carrusel{
-    width: 300px;
-}
-.ancho-clases{
-    max-width: 600px;
-    margin: 0;
-}
-.fondo-section-a{
-    min-height: 50vh;
-    background: linear-gradient(to bottom, #0d131a 0%, #0d131a 20%, #182b2bcc 100%), url(../asset/horizons_village.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, auto 50%;
-    background-position: center, bottom center;
-}
-.fondo-section-b{
-    background: linear-gradient(to bottom, #172425 0%, #182b2b 40%, #cad2e7 100%);
-}
-.fondo-section-c{
-    background-image: url(../asset/background-l.jpg);
-}
-.div-index{
-    background-color: #0c151d;
-    color: #aca28d;
-    padding: 20px;
-}
-@media (max-width: 768px) {
-    .fondo-section-a {
-        background-size: cover, auto 15%;
-    }
-}
 .fondo-asignaturas{
     background-image: url(../asset/logo-fondo.jpg);
     background-repeat: no-repeat;
@@ -40,10 +10,6 @@
         background-repeat: repeat;
     }
 }
-
-
-
-
 .materias-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -98,10 +64,6 @@ article p{
     padding: 5px;
     width: 120px;
 }
-
-
-
-
 .contacto{
     background-color: #2F4F4F;
     color: white;
@@ -123,28 +85,12 @@ form{
 .fondo-card{
     background-color: #aca28d;
 }
-.mini-logo{
-    width: 100px;
-}
-.mi-ancho{
-    max-width: 500px;
-}
-.img-logo{
-    width: 100%;
-}
-
 .div-casas{
     max-width: 600px;
     margin: 0 auto;
     background-color: #3e3f6067;
     border-radius: 10%;
     box-shadow: 0 100px 50px 5px rgba(0, 0, 0, 0.575);
-}
-.fondo-negro{
-    background-color: #000000;
-}
-.fondo-casas{
-    background: linear-gradient(to bottom, black, #1f2443);
 }
 .fondo-dragon{
     background: linear-gradient(to bottom, #080c30d3 20%, #090938b7 50%, #000000 100%), url(../asset/background-a.jpg);

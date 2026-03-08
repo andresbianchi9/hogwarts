@@ -2,7 +2,62 @@
 
 .banner-index {
     width: 100%;
-    height: 200px;
+    height: 300px;
     object-fit: cover;
     display: block;
+}
+.imagen-bienvenida{
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.7);
+}
+.carrusel-clases{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.7);
+}
+.index-div-texto{
+    max-width: 600px;
+    color: $color-claro;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.7);
+}
+.fondo-londres{
+    min-height: 30vh;
+    background: linear-gradient(to bottom, $color-intenso 0%, $color-intenso 20%, rgba($color-suave, 0.8) 100%), url(../asset/horizons_bridge.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 50%;
+    background-position: center, bottom center;
+}
+@media (max-width: 768px) {
+    .fondo-londres {
+        background-size: cover, auto 10%;
+    }
+}
+.fondo-quidditch{
+    min-height: 30vh;
+    background: linear-gradient(to bottom, $color-suave 0%, $color-suave 20%, rgba($color-intenso, 0.8) 100%), url(../asset/horizons_quidditch.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 50%;
+    background-position: center, bottom left;
+}
+@media (max-width: 768px) {
+    .fondo-quidditch {
+        background-size: cover, auto 10%;
+    }
+}
+.fondo-hogwarts{
+    min-height: 30vh;
+    background: linear-gradient(to bottom, $color-intenso 0%, $color-intenso 20%, rgba($color-suave, 0.8) 100%), url(../asset/horizons_village.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 50%;
+    background-position: center, bottom center;
+}
+@media (max-width: 768px) {
+    .fondo-hogwarts {
+        background-size: cover, auto 10%;
+    }
 }
