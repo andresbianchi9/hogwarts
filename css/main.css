@@ -20,6 +20,16 @@ h2, h3, h4, h5, h6, .accordion-button {
   text-shadow: 10px 5px 10px rgba(82, 38, 35, 0.5);
 }
 
+a {
+  color: #9F6932;
+  font-style: italic;
+  transition: opacity 0.2s ease;
+}
+
+a:not(:has(button)):hover {
+  opacity: 0.5;
+}
+
 .navbar {
   background-color: #0C151D;
   --bs-navbar-color: #ACA28D;
@@ -211,7 +221,7 @@ article p {
   padding-bottom: 10px;
 }
 
-.conocer {
+.boton-claro {
   background-color: whitesmoke;
   font-weight: bold;
   color: #2A374D;
@@ -219,7 +229,7 @@ article p {
   width: 120px;
 }
 
-.inscribirse {
+.boton-oscuro {
   background-color: #2A374D;
   font-weight: bold;
   color: whitesmoke;

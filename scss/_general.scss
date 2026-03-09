@@ -17,6 +17,16 @@ h2, h3, h4, h5, h6, .accordion-button{
     font-weight: bolder;
     text-shadow: 10px 5px 10px rgba($color-detalles, 0.5);
 }
+a{
+    color: $color-alterno;
+    font-style: italic;
+    transition: opacity 0.2s ease;
+}
+
+a:not(:has(button)):hover {
+    opacity: 0.5;
+}
+
 .navbar{
     background-color: $color-intenso;
     --bs-navbar-color: #{$color-claro};
