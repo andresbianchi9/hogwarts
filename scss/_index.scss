@@ -17,6 +17,11 @@
     margin-bottom: 20px;
 }
 
+.imagen-bienvenida:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
 .carrusel-clases{
     max-width: 600px;
     width: 100%;
