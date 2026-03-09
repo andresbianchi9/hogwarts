@@ -1,2 +1,17 @@
 @use "variables" as*;
 
+.contacto{
+    background-color: #2F4F4F;
+    color: white;
+}
+form{
+    background-color: #182b2b;
+}
+.mascontactos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    text-align: center;
+}
+

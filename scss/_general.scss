@@ -11,10 +11,11 @@ header{
 h1{
     font-family: $fuente-header;
 }
-h2, h3, h4, h5, h6{
+h2, h3, h4, h5, h6, .accordion-button{
     font-family: $fuente-titulos;
     font-size: xx-large;
     font-weight: bolder;
+    text-shadow: 10px 5px 10px rgba($color-detalles, 0.5);
 }
 .navbar{
     background-color: $color-intenso;

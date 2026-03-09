@@ -1,2 +1,47 @@
 @use "variables" as *;
 
+.div-casas {
+    max-width: 800px;
+}
+
+.fondo-casas {
+    background-color: $color-claro;
+    color: $color-suave;
+}
+
+.marcador-casas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carta {
+    position: relative;
+    width: 300px;
+    transition: transform .3s;
+}
+
+.carta + .carta {
+    margin-left: -100px;
+}
+
+.carta img {
+    width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+.carta:hover{
+    z-index:10;
+    transform: scale(1.08);
+}
+
+.puntaje{
+    position:absolute;
+    top: 40%;
+    left: 15px;
+    font-size: clamp(18px, 4vw, 42px);
+    font-weight:bold;
+    color: $color-claro;
+    text-shadow:0 0 10px $color-intenso;
+}

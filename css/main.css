@@ -1,10 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic+Didone&family=IM+Fell+English+SC&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Metal+Mania&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-.carrusel-castillo {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-}
-
 body {
   font-family: "Noto Sans", sans-serif;
 }
@@ -19,17 +13,18 @@ h1 {
   font-family: "Metal Mania", system-ui;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6, .accordion-button {
   font-family: "IM Fell Englesh SC", serif;
   font-size: xx-large;
   font-weight: bolder;
+  text-shadow: 10px 5px 10px rgba(82, 38, 35, 0.5);
 }
 
 .navbar {
   background-color: #0C151D;
   --bs-navbar-color: #ACA28D;
-  --bs-navbar-active-color: hotpink;
-  --bs-navbar-hover-color: yellow;
+  --bs-navbar-active-color: yellow;
+  --bs-navbar-hover-color: cyan;
   padding: 0;
   margin: 0;
   border: 0;
@@ -90,6 +85,7 @@ footer p {
   object-fit: cover;
   display: block;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
 }
 
 .carrusel-clases {
@@ -107,42 +103,191 @@ footer p {
 
 .fondo-londres {
   min-height: 30vh;
-  background: linear-gradient(to bottom, #0C151D 0%, #0C151D 20%, rgba(42, 55, 77, 0.8) 100%), url(../asset/horizons_bridge.png);
+  background: linear-gradient(to bottom, #0C151D 0%, #0C151D 20%, #2A374D 50%, rgba(42, 55, 77, 0.8) 100%), url(../asset/horizons_bridge.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, auto 50%;
   background-position: center, bottom center;
 }
 
-@media (max-width: 768px) {
-  .fondo-londres {
-    background-size: cover, auto 10%;
-  }
-}
 .fondo-quidditch {
   min-height: 30vh;
-  background: linear-gradient(to bottom, #2A374D 0%, #2A374D 20%, rgba(12, 21, 29, 0.8) 100%), url(../asset/horizons_quidditch.png);
+  background: linear-gradient(to bottom, #0C151D 0%, #0C151D 20%, #2A374D 50%, rgba(42, 55, 77, 0.8) 100%), url(../asset/horizons_quidditch.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, auto 50%;
   background-position: center, bottom left;
 }
 
-@media (max-width: 768px) {
-  .fondo-quidditch {
-    background-size: cover, auto 10%;
-  }
-}
 .fondo-hogwarts {
   min-height: 30vh;
-  background: linear-gradient(to bottom, #0C151D 0%, #0C151D 20%, rgba(42, 55, 77, 0.8) 100%), url(../asset/horizons_village.png);
+  background: linear-gradient(to bottom, #0C151D 0%, #0C151D 20%, #2A374D 50%, rgba(42, 55, 77, 0.8) 100%), url(../asset/horizons_village.png);
   background-repeat: no-repeat, no-repeat;
   background-size: cover, auto 50%;
   background-position: center, bottom center;
 }
 
-@media (max-width: 768px) {
-  .fondo-hogwarts {
+@media (max-width: 992px) {
+  .fondo-londres, .fondo-quidditch, .fondo-hogwarts {
     background-size: cover, auto 10%;
   }
+}
+.accordion {
+  max-width: 600px;
+  margin: 0 auto;
+  --bs-accordion-border-color: #2A374D;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #828DA8;
+}
+
+.accordion-button {
+  background-color: #0C151D;
+  color: #ACA28D;
+  font-weight: bold;
+}
+
+.accordion-body {
+  background-color: #2A374D;
+  color: #ACA28D;
+  text-shadow: 0px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #0C151D;
+  color: #ACA28D;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-icon);
+}
+
+.fondo-asignaturas {
+  background-image: url(../asset/logo-fondo.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  color: #2A374D;
+}
+
+@media (max-width: 768px) {
+  .fondo-asignaturas {
+    background-size: contain;
+    background-repeat: repeat;
+  }
+}
+.materias-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px;
+  padding: 20px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100%;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 5px;
+}
+
+article h3 {
+  height: 70px;
+  text-align: center;
+  margin: 0;
+  align-items: center;
+  display: flex;
+}
+
+article div {
+  flex-grow: 1;
+}
+
+article p {
+  padding-left: 15px;
+  padding-bottom: 10px;
+}
+
+.conocer {
+  background-color: white;
+  font-weight: bold;
+  color: #2F4F4F;
+  padding: 5px;
+  width: 120px;
+}
+
+.inscribirse {
+  background-color: #2F4F4F;
+  font-weight: bold;
+  color: white;
+  padding: 5px;
+  width: 120px;
+}
+
+.div-casas {
+  max-width: 800px;
+}
+
+.fondo-casas {
+  background-color: #ACA28D;
+  color: #2A374D;
+}
+
+.marcador-casas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carta {
+  position: relative;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.carta + .carta {
+  margin-left: -100px;
+}
+
+.carta img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+}
+
+.carta:hover {
+  z-index: 10;
+  transform: scale(1.08);
+}
+
+.puntaje {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  font-size: clamp(18px, 4vw, 42px);
+  font-weight: bold;
+  color: #ACA28D;
+  text-shadow: 0 0 10px #0C151D;
+}
+
+.contacto {
+  background-color: #2F4F4F;
+  color: white;
+}
+
+form {
+  background-color: #182b2b;
+}
+
+.mascontactos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 50px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

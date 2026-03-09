@@ -6,6 +6,7 @@
     object-fit: cover;
     display: block;
 }
+
 .imagen-bienvenida{
     width: 100%;
     max-width: 600px;
@@ -13,51 +14,44 @@
     object-fit: cover;
     display: block;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.7);
+    margin-bottom: 20px;
 }
+
 .carrusel-clases{
     max-width: 600px;
     width: 100%;
     height: auto;
     box-shadow: 0px 2px 6px rgba(0,0,0,0.7);
 }
+
 .index-div-texto{
     max-width: 600px;
     color: $color-claro;
     text-shadow: 0px 2px 6px rgba(0,0,0,0.7);
 }
+
+@mixin fondo-horizontes($img, $posicion) {
+    min-height: 30vh;
+    background: linear-gradient(to bottom, $color-intenso 0%, $color-intenso 20%, $color-suave 50%, rgba($color-suave, 0.8) 100%), url(#{$img});
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, auto 50%;
+    background-position: center, $posicion;
+}
+
 .fondo-londres{
-    min-height: 30vh;
-    background: linear-gradient(to bottom, $color-intenso 0%, $color-intenso 20%, rgba($color-suave, 0.8) 100%), url(../asset/horizons_bridge.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, auto 50%;
-    background-position: center, bottom center;
+    @include fondo-horizontes("../asset/horizons_bridge.png", bottom center);
 }
-@media (max-width: 768px) {
-    .fondo-londres {
-        background-size: cover, auto 10%;
-    }
-}
+
 .fondo-quidditch{
-    min-height: 30vh;
-    background: linear-gradient(to bottom, $color-suave 0%, $color-suave 20%, rgba($color-intenso, 0.8) 100%), url(../asset/horizons_quidditch.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, auto 50%;
-    background-position: center, bottom left;
+    @include fondo-horizontes("../asset/horizons_quidditch.png", bottom left);
 }
-@media (max-width: 768px) {
-    .fondo-quidditch {
-        background-size: cover, auto 10%;
-    }
-}
+
 .fondo-hogwarts{
-    min-height: 30vh;
-    background: linear-gradient(to bottom, $color-intenso 0%, $color-intenso 20%, rgba($color-suave, 0.8) 100%), url(../asset/horizons_village.png);
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, auto 50%;
-    background-position: center, bottom center;
+    @include fondo-horizontes("../asset/horizons_village.png", bottom center);
 }
-@media (max-width: 768px) {
-    .fondo-hogwarts {
+
+@media (max-width: 992px) {
+    .fondo-londres, .fondo-quidditch, .fondo-hogwarts {
         background-size: cover, auto 10%;
     }
 }

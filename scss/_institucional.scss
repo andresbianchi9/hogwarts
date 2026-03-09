@@ -1,7 +1,25 @@
 @use "variables" as*;
 
-.carrusel-castillo{
-    max-width: 400px;
-    width: 100%;
-    height: auto;
+.accordion{
+    max-width: 600px;
+    margin: 0 auto;
+    --bs-accordion-border-color: #{$color-suave};
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem #{$color-focus};
+}
+.accordion-button{
+    background-color: $color-intenso;
+    color: $color-claro;
+    font-weight: bold;
+}
+.accordion-body{
+    background-color: $color-suave;
+    color: $color-claro;
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.7);
+}
+.accordion-button:not(.collapsed){
+    background-color: $color-intenso;
+    color: $color-claro;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: var(--bs-accordion-btn-icon)
 }
