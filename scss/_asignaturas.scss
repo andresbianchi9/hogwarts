@@ -48,16 +48,16 @@ article p{
     padding-bottom: 10px;
 }
 .conocer{
-    background-color: white;
+    background-color: whitesmoke;
     font-weight: bold;
-    color: #2F4F4F;
+    color: $color-suave;
     padding: 5px;
     width: 120px;
 }
 .inscribirse{
-    background-color: #2F4F4F;
+    background-color: $color-suave;
     font-weight: bold;
-    color: white;
+    color: whitesmoke;
     padding: 5px;
     width: 120px;
 }

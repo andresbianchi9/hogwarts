@@ -212,17 +212,17 @@ article p {
 }
 
 .conocer {
-  background-color: white;
+  background-color: whitesmoke;
   font-weight: bold;
-  color: #2F4F4F;
+  color: #2A374D;
   padding: 5px;
   width: 120px;
 }
 
 .inscribirse {
-  background-color: #2F4F4F;
+  background-color: #2A374D;
   font-weight: bold;
-  color: white;
+  color: whitesmoke;
   padding: 5px;
   width: 120px;
 }
@@ -274,20 +274,20 @@ article p {
 }
 
 .contacto {
-  background-color: #2F4F4F;
+  background-color: #2A374D;
   color: white;
 }
 
-form {
-  background-color: #182b2b;
+.contacto div {
+  max-width: 600px;
 }
 
-.mascontactos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding: 50px;
-  text-align: center;
+form {
+  background-color: #0C151D;
+}
+
+.lechuza {
+  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.7);
 }
 
 /*# sourceMappingURL=main.css.map */

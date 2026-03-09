@@ -1,17 +1,19 @@
 @use "variables" as*;
 
 .contacto{
-    background-color: #2F4F4F;
+    background-color: $color-suave;
     color: white;
 }
-form{
-    background-color: #182b2b;
+
+.contacto div {
+    max-width: 600px;
 }
-.mascontactos{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 50px;
-    text-align: center;
+
+form{
+    background-color: $color-intenso;
+}
+
+.lechuza{
+    box-shadow: 0px 2px 20px rgba(0,0,0,0.7);;
 }
 
